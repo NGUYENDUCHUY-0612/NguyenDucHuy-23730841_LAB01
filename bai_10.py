@@ -5,10 +5,19 @@ Created on Sun Sep  1 09:56:36 2024
 @author: Nguyễn Đức Huy - 23730841
 """
 
-so_xe = input("Nhập số xe của bạn (gồm 4 chữ số): ")
-
-if len(so_xe) == 4 and so_xe.isdigit():
-    tong_nut = sum(int(chu_so) for chu_so in so_xe)
-    print(f"Tổng các chữ số (số nút) của số xe {so_xe} là: {tong_nut}")
+a = int(input('Nhập số xe gồm 4 số:'))
+số_đầu = a // 1000
+số_thứ_hai = ((a% 1000)//100)
+số_thứ_ba = ((a% 1000)% 100)//10
+số_cuối = (a% 10)
+biển_số_xe = (số_đầu,số_thứ_hai,số_thứ_ba,số_cuối)
+số_nút = sum(biển_số_xe)
+if 0 <= số_nút <=9:
+    print(f'số nút của bạn là {số_nút} nút')
 else:
-    print("Vui lòng nhập đúng số xe gồm 4 chữ số.")
+    a = số_nút // 10
+    b = số_nút % 10
+    số_mới = a+b
+    c = số_mới//10
+    d = số_mới % 10
+    print('Số nút mới là:', c + d)
