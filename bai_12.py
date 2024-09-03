@@ -6,13 +6,26 @@ Created on Sun Sep  1 10:20:00 2024
 """
 
 import random
-def Intheodebai():
-    S1 = random.randint(0, 100)
-    print("a Số nguyên ngẫu nhiên từ 0 đến 100:", S1)
-    S2 = random.randint(50, 99)
-    print("b Số nguyên ngẫu nhiên từ 50 đến 99:", S2)
-    S3 = random.randint(-39, 79)
-    print("c Số nguyên ngẫu nhiên từ -39 đến 79:", S3)
-    S4 = random.randint(-79, -39)
-    print("d Số nguyên ngẫu nhiên từ -79 đến -39:", S4)
-Intheodebai()
+#a> 0 đến 100:
+a = random.randint(0,100)
+b = random.uniform(0,100)
+print ("Một số nguyên ngẫu nhiên từ 0 đến 100: ", a)
+print ("Một số thực ngẫu nhiên từ 0 đến 100: ", b)
+
+#b> 50 đến 90:
+c = random.randint(50,90)
+d = random.uniform(50,90)
+print ("Một số nguyên ngẫu nhiên từ 50 đến 90: ", c)
+print ("Một số thực ngẫu nhiên từ 50 đến 90: ", d)
+
+#c> -39 đến 79:
+x = random.randint(-39,79)
+y = random.uniform(-39,79)
+print ("Một số nguyên ngẫu nhiên từ -39 đến 79: ", x)
+print ("Một số thực ngẫu nhiên từ -39 đến 79: ", y)
+
+#d> -79 đến -39:
+z = random.randint(-79,-39)
+t = random.uniform(-79,-39)
+print ("Một số nguyên ngẫu nhiên từ -79 đến -39: ", z)
+print ("Một số thực ngẫu nhiên từ -79 đến -39: ", t)
