@@ -15,11 +15,11 @@ print("==================")
 a = int(input("Moi nhap lua chon: "))
 if a == 1:
     print("Hu tieu")
-if a == 2:
+elif a == 2:
     print("Chao long")
-if a == 3:
+elif a == 3:
     print("Banh canh")
-if a == 4:
+elif a == 4:
     print("Bun rieu")
-if a ==5:
+else:
     print("Pho bo")
